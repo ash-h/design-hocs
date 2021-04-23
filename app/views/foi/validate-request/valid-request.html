@@ -31,38 +31,40 @@
                     </select>
                 </div>
                 <br>
-
-            </fieldset>
-            <div class="govuk-form-group">
-                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
-                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-                        <h2 class="govuk-fieldset__heading">
-                            Is the correct team selected above?
+                <div class="govuk-form-group">
+                    <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="more-detail">
+                        Enter any supporting information (optional)
+                    </label>
+                    </h2>
+                    <div id="more-detail-hint" class="govuk-hint">
+                        Add any information the receiving team may need.
+                    </div>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+                <div class="govuk-form-group">
+                    <legend class="govuk-fieldset__legend">
+                        <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="more-detail">
+                            Have you entered all required info?
+                        </label>
                         </h2>
                     </legend>
-                    <div class="govuk-radios govuk-radios--inline">
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
-                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                    <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
                                 Yes
                             </label>
                         </div>
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
-                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                                No
-                            </label>
-                        </div>
                     </div>
-                </fieldset>
-                <button class="govuk-button" data-module="govuk-button">
-                    Continue
-                </button>
-                <br>
-                <a href="step-one.html" class="govuk-back-link">Back</a>
-            </div>
+                    <br>
+                </div>
+            </fieldset>
+            <button class="govuk-button" data-module="govuk-button">
+                Continue
+            </button>
+            <br>
+            <a href="step-one.html" class="govuk-back-link">Back</a>
         </div>
-
       </form>
     </div>
     <div class="govuk-grid-column-two-thirds">
