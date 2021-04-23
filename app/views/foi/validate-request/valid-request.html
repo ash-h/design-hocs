@@ -1,0 +1,78 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+        <form action="confirmation.html" >
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                    <h1 class="govuk-fieldset__heading">
+                        Select the team to deal with request.
+                    </h1>
+                </legend>
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="team">
+                        Team name
+                    </label>
+                    <select class="govuk-select" id="team" name="team">
+                        <option value="published">this team</option>
+                        <option value="updated" selected>that team</option>
+                        <option value="views">Another team with a long name</option>
+                        <option value="comments">The other team</option>
+                    </select>
+                </div>
+                <br>
+
+            </fieldset>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                        <h2 class="govuk-fieldset__heading">
+                            Is the correct team selected above?
+                        </h2>
+                    </legend>
+                    <div class="govuk-radios govuk-radios--inline">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="govuk-button" data-module="govuk-button">
+                    Save and continue
+                </button>
+                <br>
+                <a href="step-one.html" class="govuk-back-link">Back</a>
+            </div>
+        </div>
+
+      </form>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}

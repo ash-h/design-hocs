@@ -1,0 +1,48 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+        <div class="govuk-panel govuk-panel--confirmation">
+            <h1 class="govuk-panel__title">
+                Request assigned
+            </h1>
+<!--            <div class="govuk-panel__body">-->
+<!--                Request:<br><strong>HDJ2123F</strong>-->
+<!--                has been assigned to team <strong>XXXXXXXXXXXXX</strong>-->
+<!--            </div>-->
+        </div>
+        <p class="govuk-body">
+            Request <strong>XXXXXXXX</strong> has been assigned to: <strong>XXXXXXXXXXX</strong>
+        </p>
+
+        <h2 class="govuk-heading-m">Next steps</h2>
+
+
+        <p class="govuk-body">
+            More contextual info to go here i.e. SLA
+        </p>
+
+        <p class="govuk-body">
+            <a href="#" class="govuk-link">Return to your dashboard</a><br>
+            <a href="#" class="govuk-link">Assign another request</a>
+        </p>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}
