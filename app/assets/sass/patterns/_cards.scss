@@ -1,0 +1,45 @@
+.card {
+  background-color:  govuk-colour("light-grey");
+  padding:10px;
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    text-decoration: none;
+    margin-bottom: 0;
+  }
+
+
+}
+
+.card-status {
+  background-color: govuk-colour("black");
+  padding:0 10px;
+
+  &-blue {
+    background-color:govuk-colour("blue");
+    padding:4px 10px;
+
+    .status-text {
+      color: govuk-colour("white");
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+  &-red {
+    background-color: govuk-colour("red");
+    padding:4px 10px;
+
+    .status-text {
+      color: govuk-colour("white");
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+
+
+  .status-text {
+    color: govuk-colour("white");
+    font-weight: bold;
+  }
+}
