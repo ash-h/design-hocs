@@ -1,0 +1,85 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        <form action="response-confirmation.html">
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+                        <h1 class="govuk-fieldset__heading">
+                            Select a response type
+                        </h1>
+                        <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                    </legend>
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="team">
+                            Responses types
+                        </label>
+                        <select class="govuk-select" id="team" name="team">
+                            <option value="published">No Name Provided</option>
+                            <option value="updated" selected>Not a Proper Request</option>
+                            <option value="views">Request For Further Clarification</option>
+                            <option value="comments">Request Remain Unclear After Clarification</option>
+                            <option value="comments">No Information Held, Cost Limit Exceeded (Section 21)</option>
+                            <option value="comments">Cost Limit Exceeded After Refinement (Section 12)</option>
+                            <option value="comments">Vexatious</option>
+                            <option value="comments">Repeat Request</option>
+                            <option value="comments">Information Already Reasonable Accessible To The Requester(Section 21)</option>
+                            <option value="comments">Future Publication (Section 22)</option>
+                            <option value="comments">Others Not Listed</option>
+                        </select>
+                    </div>
+                    <p class="govuk-body"><a href="" class="govuk-link">guidance on request types</a></p>
+                    <div class="govuk-form-group ">
+                        <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="more-detail">
+                            Enter any supporting information (optional)
+                        </label>
+                        </h2>
+                        <div id="more-detail-hint" class="govuk-hint">
+                            If you have selected other you may want to add further details about this case.
+                        </div>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    </div>
+                    <legend class="govuk-fieldset__legend">
+                        <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="more-detail">
+                            Have you entered all required info?
+                        </label>
+                        </h2>
+                    </legend>
+                    <div class="govuk-checkboxes govuk-checkboxes--small">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                            <label class="govuk-label govuk-checkboxes__label" for="waste">
+                                Yes
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
+                    Continue
+                </button>
+                <br>
+                <a href="step-one.html" class="govuk-back-link">Back</a>
+            </div>
+        </form>
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}

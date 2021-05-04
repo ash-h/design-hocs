@@ -1,0 +1,133 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+        <form action="check.html" >
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                    <h1 class="govuk-fieldset__heading">
+                        Tell us more about this request.
+                    </h1>
+                </legend>
+                <div class="govuk-form-group">
+                    <label class=" govuk-heading-s" for="topic">
+                        Topic
+                        <span class="govuk-hint">select a topic</span>
+                    </label>
+                    <select class="govuk-select" id="topic" name="topic">
+                        <option value="published">this team</option>
+                        <option value="updated" selected>that team</option>
+                        <option value="views">Another team with a long name</option>
+                        <option value="comments">The other team</option>
+                    </select>
+                </div>
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="topic-2">
+                        Sub topic
+                        <span class="govuk-hint">select a topic</span>
+                    </label>
+                    <select class="govuk-select" id="topic-2" name="sub-topic">
+                        <option value="published">this team</option>
+                        <option value="updated" selected>that team</option>
+                        <option value="views">Another team with a long name</option>
+                        <option value="comments">The other team</option>
+                    </select>
+                </div>
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                                Sensitivity?
+                            <span class="govuk-hint">select a topic</span>
+                        </legend>
+                        <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="sensitive" name="sensitive" type="radio" value="sensitive">
+                                <label class="govuk-label govuk-radios__label" for="sensitive">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="non-sensitive" name="non-sensitive" type="radio" value="non-sensitive">
+                                <label class="govuk-label govuk-radios__label" for="non-sensitive">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+                            QA offline?
+                            <span class="govuk-hint">select a topic</span>
+                        </legend>
+                        <div class="govuk-radios">
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="offline-qa" name="offline-qa" type="radio" value="offline-qa">
+                                <label class="govuk-label govuk-radios__label" for="offline-qa">
+                                    Yes
+                                </label>
+                            </div>
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="offline-qa-2" name="offline-qa-2" type="radio" value="non-offline-qa">
+                                <label class="govuk-label govuk-radios__label" for="offline-qa-2">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <br>
+                <div class="govuk-form-group">
+                    <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="more-detail">
+                        Enter any supporting information (optional)
+                    </label>
+                    </h2>
+                    <div id="more-detail-hint" class="govuk-hint">
+                        Add any information the receiving team may need.
+                    </div>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                </div>
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="team">
+                        Select receiving team
+                        <span class="govuk-hint">select a topic</span>
+                    </label>
+                    <select class="govuk-select" id="team" name="team">
+                        <option value="published">this team</option>
+                        <option value="updated" selected>that team</option>
+                        <option value="views">Another team with a long name</option>
+                        <option value="comments">The other team</option>
+                    </select>
+                </div>
+            </fieldset>
+            <br>
+            <button class="govuk-button" data-module="govuk-button">
+                Continue
+            </button>
+            <br>
+            <a href="step-two.html" class="govuk-back-link">Back</a>
+        </div>
+      </form>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}
