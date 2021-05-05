@@ -1,0 +1,57 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+        <form action="confirmation.html" >
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                    <h1 class="govuk-fieldset__heading">
+                        Who should be dealing with this request.
+                    </h1>
+                </legend>
+                <div class="govuk-form-group">
+                    <label class=" govuk-heading-s" for="topic">
+                        Select a team
+                        <span class="govuk-hint">select a topic</span>
+                    </label>
+                    <select class="govuk-select" id="topic" name="topic">
+                        <option value="published">this team</option>
+                        <option value="updated" selected>that team</option>
+                        <option value="views">Another team with a long name</option>
+                        <option value="comments">The other team</option>
+                    </select>
+                </div>
+
+                <br>
+            </fieldset>
+            <p>Are you sure option</p>
+            <br>
+            <button class="govuk-button" data-module="govuk-button">
+                Continue
+            </button>
+            <br>
+            <a href="step-two.html" class="govuk-back-link">Back</a>
+        </div>
+      </form>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}
