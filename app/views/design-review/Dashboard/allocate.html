@@ -1,0 +1,195 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+<a href="case-page.html" class="govuk-back-link">Back</a>
+{% endblock %}
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Allocate this case
+      <span class="govuk-caption-xl">Team name</span>
+    </h1>
+
+  </div>
+</div>
+<div class="govuk-grid-row govuk-!-margin-bottom-6">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Your cases</h2>
+    <p class="govuk-body-l">12</p>
+    <a class="govuk-link" href="#">view your allocated cases</a>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Your teams cases</h2>
+    <p class="govuk-body-l">122</p>
+    <a class="govuk-link" href="#">view cases allocated to your team</a>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Actions</h2>
+    <ul class="govuk-list">
+      <li><a href="#">Create a new case</a></li>
+      <li><a href="#">Create a new case</a></li>
+    </ul>
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+    <table class="govuk-table">
+      <caption class="govuk-table__caption govuk-table__caption--m">
+        Your recent cases
+      </caption>
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header app-custom-class">Select</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Reference</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Current stage</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Reason for escalation</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Team/Owner</th>
+        <th scope="col" class="govuk-table__header app-custom-class">Deadline</th>
+      </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td  class="govuk-table__cell">
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input id="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6"
+                     type="checkbox"
+                     name="selected_cases[]"
+                     class="govuk-checkboxes__input"
+                     value="984c5f2a-5a44-4c25-a6cb-00b9973697b6:cc902011-3595-49ff-9544-52cf5788aae6">
+              <label class="govuk-label govuk-checkboxes__label"
+                     for="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6">
+                    <span class="govuk-visually-hidden">
+                      value
+                    </span>
+              </label>
+            </div>
+          </div>
+        </td>
+        <td class="govuk-table__cell">
+          <strong>Mr John Smith MP</strong>
+          <br>
+          <p><a href="step-one.html" class="govuk-link">
+            MIN/12345678
+          </a>
+          </p>
+        </td>
+        <td class="govuk-table__cell">Initial Draft (Escalated)</td>
+        <td class="govuk-table__cell">Details of reason show here</td>
+        <td class="govuk-table__cell">Triage: HMPO official <br>Jasmin.farah</td>
+        <td class="govuk-table__cell">12/07/2020</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td  class="govuk-table__cell">
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input id="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6"
+                     type="checkbox"
+                     name="selected_cases[]"
+                     class="govuk-checkboxes__input"
+                     value="984c5f2a-5a44-4c25-a6cb-00b9973697b6:cc902011-3595-49ff-9544-52cf5788aae6">
+              <label class="govuk-label govuk-checkboxes__label"
+                     for="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6">
+                    <span class="govuk-visually-hidden">
+                      value
+                    </span>
+              </label>
+            </div>
+          </div>
+        </td>
+        <td class="govuk-table__cell">
+          <strong>Mr John Smith MP</strong>
+          <br>
+          <p><a href="#" class="govuk-link">
+            MIN/12345678
+          </a>
+          </p>
+        </td>
+        <td class="govuk-table__cell">Initial Draft (Escalated)</td>
+        <td class="govuk-table__cell">Details of reason show here</td>
+        <td class="govuk-table__cell">Triage: HMPO official <br>Jasmin.farah</td>
+        <td class="govuk-table__cell">12/07/2020</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td  class="govuk-table__cell">
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input id="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6"
+                     type="checkbox"
+                     name="selected_cases[]"
+                     class="govuk-checkboxes__input"
+                     value="984c5f2a-5a44-4c25-a6cb-00b9973697b6:cc902011-3595-49ff-9544-52cf5788aae6">
+              <label class="govuk-label govuk-checkboxes__label"
+                     for="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6">
+                    <span class="govuk-visually-hidden">
+                      value
+                    </span>
+              </label>
+            </div>
+          </div>
+        </td>
+        <td class="govuk-table__cell">
+          <strong>Mr John Smith MP</strong>
+          <br>
+          <p><a href="#" class="govuk-link">
+            MIN/12345678
+          </a>
+          </p>
+        </td>
+        <td class="govuk-table__cell">Initial Draft (Escalated)</td>
+        <td class="govuk-table__cell">Details of reason show here</td>
+        <td class="govuk-table__cell">Triage: HMPO official <br>Jasmin.farah</td>
+        <td class="govuk-table__cell">12/07/2020</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!--  <div class="govuk-grid-row">-->
+<!--    <div class="govuk-grid-column-one-third">-->
+<!--      <h1 class="govuk-heading-xl">-->
+<!--        The GOV.UK Prototype Kit-->
+<!--        <span class="govuk-caption-xl">{{releaseVersion}}</span>-->
+<!--      </h1>{{releaseVersion | log }}-->
+<!--      <p>-->
+<!--        This kit lets you rapidly create HTML prototypes of GOV.UK services.-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.-->
+<!--      </p>-->
+
+<!--      <h2 class="govuk-heading-m">About this page</h2>-->
+
+<!--      <p>We recommend you add links to your prototype to this page, rather than delete it.-->
+<!--        You'll find this page in the kit at '/app/views/index.html'.</p>-->
+
+<!--      <p>You can change the service name by editing the file '/app/config.js'.</p>-->
+
+<!--      <a href="cms/index">Complaints</a>-->
+<!--      <h2 class="govuk-heading-m">Examples and documentation</h2>-->
+
+<!--      <ul class="govuk-list govuk-list&#45;&#45;bullet">-->
+<!--        <li>-->
+<!--          <a href="/docs/tutorials-and-examples">Example pages and documentation</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <div class="govuk-grid-column-two-thirds">-->
+<!--      {% block rightr %}-->
+<!--      {% include "includes/decs.html" %}-->
+<!--      {% endblock %}-->
+<!--    </div>-->
+<!--  </div>-->
+
+{% endblock %}
