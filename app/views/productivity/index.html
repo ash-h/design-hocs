@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Productivity and performance report prototypes
+    </h1>
+  </div>
+</div>
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m">Team reports
+      </h2>
+      <hr>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="reports/team/processed.html">Processed</a>
+          <p>A List of all cases processed by the team within given time parameters</p>
+        </li>
+        <li>
+          <a class="govuk-link" href="reports/team/case-list.html">Case-list</a>
+          <p>An interactive list of all cases allocated to a team, with links to individual case and user detils</p>
+        </li>
+        <li>
+          <a class="govuk-link" href="reports/team/rejections.html">Rejections</a>
+          <p>a count of all rejected cases with a breakdown of area/reason for rejection</p>
+        </li>
+        <li>
+          <a class="govuk-link" href="reports/team/stages.html">Stages</a>
+          <p>Breakdown of active workload into stages</p>
+        </li>
+      </ul>
+      <h2 class="govuk-heading-m">User reports
+      </h2>
+      <hr>
+      <ul class="govuk-list">
+        <li>
+          <a class="govuk-link" href="reports/team/team-member.html">Team member</a>
+          <p>Information on individual user</p>
+        </li>
+
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}

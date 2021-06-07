@@ -1,0 +1,89 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="../index.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Team overview
+    </h1>
+
+
+    <h2 class="govuk-heading-m">About this page</h2>
+
+    <p>This is a list of all prototypes for <strong>Freedom of information</strong> and their current status.</p>
+
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter ">
+    <div class="card govuk-!-margin-1">
+      <h2 class="govuk-heading-m">Active cases</h2>
+      <span>78</span><br>
+    </div>
+    <div class="card__actions">
+      <a href="stages.html">breakdown by type</a><br>
+      <a href="case-list.html">view all</a>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <div class="card govuk-!-margin-1">
+    <h2 class="govuk-heading-m">Team members available</h2>
+    <span>78</span>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <div class="card govuk-!-margin-1">
+      <h2 class="govuk-heading-m">Cases Processed</h2>
+      <span>78</span>
+      <a href="processed.html" class="govuk-link">view</a>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <div class="card govuk-!-margin-1">
+      <h2 class="govuk-heading-m">Rejections</h2>
+      <span>78</span>
+      <a href="rejections.html">view</a>
+    </div>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <div class="card govuk-!-margin-1">
+    <h2 class="govuk-heading-m">Contributions</h2>
+    <span>78</span><br>
+    <a href="stages.html">breakdown by type</a><br>
+    <a href="case-list.html">view all</a>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <div class="card govuk-!-margin-1">
+    <h2 class="govuk-heading-m">Status</h2>
+    <span>78</span>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <div class="card govuk-!-margin-1">
+    <h2 class="govuk-heading-m">Teams</h2>
+    <span>78</span>
+    <a href="rejections.html">view</a>
+    </div>
+  </div>
+</div>
+
+
+
+{% endblock %}
+{% block scripts%}
+<script src="../../../public/javascripts/valid-request.js"></script>
+{% endblock %}

@@ -1,0 +1,102 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="../index.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Case list
+    </h1>
+
+  </div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h2 class="govuk-heading-s">Triage team active cases</h2>
+    <table class="govuk-table">
+    <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col"> Case number </th>
+      <th class="govuk-table__header" scope="col"> Case worker </th>
+      <th class="govuk-table__header" scope="col"> Current stage </th>
+      <th class="govuk-table__header" scope="col"> Current team </th>
+      <th class="govuk-table__header" scope="col"> Duration </th>
+    </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+      <td class="govuk-table__cell">
+        <a href="../../case-page.html">MIN/123456/765</a>
+      </td>
+      <td class="govuk-table__cell">
+        <a href="team-member.html" class="govuk-link">Jane Martin</a>
+      </td>
+      <td class="govuk-table__cell">
+        <strong class="govuk-tag govuk-tag--blue">
+          Creation
+        </strong>
+      </td>
+      <td class="govuk-table__cell">
+        QA
+      </td>
+      <td class="govuk-table__cell">
+        48 hrs
+      </td>
+    </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">
+          <a href="../../case-page.html">MIN/123456/765</a>
+        </td>
+        <td class="govuk-table__cell">
+          <a href="team-member.html" class="govuk-link">Ash Henry</a>
+        </td>
+        <td class="govuk-table__cell">
+          <strong class="govuk-tag govuk-tag--green">
+            Draft
+          </strong>
+        </td>
+        <td class="govuk-table__cell">
+          Draft
+        </td>
+        <td class="govuk-table__cell">
+          36 hrs
+        </td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">
+          <a href="../../case-page.html">MIN/123456/765</a>
+        </td>
+        <td class="govuk-table__cell">
+          <a href="team-member.html" class="govuk-link">Jane Martin</a>
+        </td>
+        <td class="govuk-table__cell">
+          <strong class="govuk-tag govuk-tag--grey">
+            Triage
+          </strong>
+        </td>
+        <td class="govuk-table__cell">
+          QA
+        </td>
+        <td class="govuk-table__cell">
+          48 hrs
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+
+{% endblock %}
+{% block scripts%}
+<script src="../../../public/javascripts/valid-request.js"></script>
+{% endblock %}

@@ -1,0 +1,117 @@
+<div class="govuk-body">
+    {% from "govuk/components/tabs/macro.njk" import govukTabs %}
+    {% from "govuk/components/table/macro.njk" import govukTable %}
+
+    {% set documentsHtml %}
+    <a href="" class="govuk-link">Manage documents</a>
+    <h3 class="govuk-heading-m govuk-!-padding-top-6">Original</h3>
+    <p>None</p>
+    <hr>
+    <h3 class="govuk-heading-m">Draft</h3>
+    <p>None</p>
+    <hr>
+    <h3 class="govuk-heading-m">Final</h3>
+    <p>None</p>
+    <hr>
+    {% endset -%}
+
+    {% set summaryHtml %}
+    <h2 class="govuk-heading-l">To Do</h2>
+    <h3>placeholder</h3>
+    {% endset -%}
+
+    {% set timelineHtml %}
+    <div class="row">
+        <div class="">
+            <div class="timeline">
+                <ul>
+                    <li class="action_needed">
+                        <h2>Ask someone to confirm your identity</h2>
+                        <p class="time">2 September 2017 at 1.01pm</p>
+                        <p>Your old passport is damaged. We can’t print your new passport until your identity is confirmed.</p>
+                        <p><a class="button" href="#0">Continue</a></p>
+                    </li>
+                    <li>
+                        <h2>Joined processing queue</h2>
+                        <p class="time">2 September 2017 at 11.32am</p>
+                        <p>Your passport application is waiting in a queue to be processed.</p>
+                    </li>
+                    <li>
+                        <h2>Application received</h2>
+                        <p class="time">28 August 2017 at 8.12pm</p>
+                        <p>Your application has been received - reference 6HWNA1358_CC3.</p>
+                    </li>
+                    <li>
+                        <h2>Application submitted</h2>
+                        <p class="time">28 August 2017</p>
+                    </li>
+                    <li >
+                        <h2>Application created</h2>
+                        <p class="time">20 August 2017</p>
+                        <div class="timeline-details">
+                            <details>
+                                <summary>Application details</summary>
+                                <span>Time stamp: 20 August 2017 at 8.23am</span>
+                                <span>Region: London</span>
+                                <span>Type: Standard application</span>
+                            </details>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endset -%}
+
+    {% set peopleHtml %}
+    <h2 class="govuk-heading-l">To Do</h2>
+    <h3>placeholder</h3>
+    {% endset -%}
+
+    {% set actionsHtml %}
+    <h2 class="govuk-heading-l"></h2>
+    <h3>Extensions</h3>
+    <p>Apply an extension to this case</p>
+    <a href="#">extend this case</a>
+    {% endset -%}
+
+    {{ govukTabs({
+    items: [
+    {
+    label: "Documents",
+    id: "documents",
+    panel: {
+    html: documentsHtml
+    }
+    },
+    {
+    label: "Summary",
+    id: "summary",
+    panel: {
+    html: summaryHtml
+    }
+    },
+    {
+    label: "Timeline",
+    id: "timeline",
+    panel: {
+    html: timelineHtml
+    }
+    },
+    {
+    label: "People",
+    id: "people",
+    panel: {
+    html: peopleHtml
+    }
+    },
+    {
+    label: "Actions",
+    id: "actions",
+    panel: {
+    html: actionsHtml
+    }
+    }
+    ]
+    }) }}
+</div>

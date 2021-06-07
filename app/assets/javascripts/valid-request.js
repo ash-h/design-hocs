@@ -2,8 +2,16 @@
 
 const items = document.getElementsByClassName("govuk-radios__input");
 const button = document.getElementsByClassName("request-button")[0];
+const backLink = document.getElementsByClassName('govuk-back-link')[0];
 
-if (button) {
+if(backLink) {
+  backLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.history.back();
+  })
+}
+
+if(button) {
   button.addEventListener("click", (e) => {
     let path = "";
     e.preventDefault()
