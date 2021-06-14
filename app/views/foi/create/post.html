@@ -13,6 +13,7 @@
 {% block content %}
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
+      <form action="confirmation.html">
       <span class="govuk-caption-l">Step 2 of 2</span>
       <h1 class="govuk-heading-l">
         Record Correspondent details
@@ -60,19 +61,19 @@
       </div>
       <div class="govuk-form-group">
         <label class="govuk-label" for="phone">
-          Telephone
+          Telephone (optional)
         </label>
         <input class="govuk-input govuk-input--width-20" id="phone" name="width-20" type="text">
       </div>
       <div class="govuk-form-group">
         <label class="govuk-label" for="email">
-          Email address
+          Email address (optional)
         </label>
         <input class="govuk-input govuk-input--width-20" id="email" name="width-20" type="text">
       </div>
       <div class="govuk-form-group">
         <label class="govuk-label" for="more-detail">
-          Enter any references given
+          Requester’s Reference (optional)
         </label>
         <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
       </div>
@@ -81,7 +82,7 @@
         Record
       </button>
 
-
+      </form>
     </div>
     <div class="govuk-grid-column-two-thirds">
       {% block rightr %}
