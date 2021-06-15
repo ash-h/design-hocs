@@ -114,11 +114,11 @@
     </div>
     <div class="govuk-form-group">
       <label class="govuk-label" for="more-detail">
-        Question?
+        Request Question
       </label>
       <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
     </div>
-    <button class="govuk-button button-secondary" data-module="govuk-button">
+    <button class="govuk-button button-secondary cancel-button" data-module="govuk-button">
     Cancel
   </button>
     <button class="govuk-button save-button" data-module="govuk-button">
@@ -140,6 +140,7 @@
 <script>
   console.log("f");
   const save = document.getElementsByClassName('save-button')[0];
+  const cancel = document.getElementsByClassName('cancel-button')[0];
   const items = document.getElementsByClassName('c-list')[0];
   const post = document.getElementById('post');
 
@@ -151,9 +152,11 @@
     } else {
       window.location.href = "email"
     }
-    console.log(items);
-    console.log("dd");
+  })
 
+  cancel.addEventListener("click", (e)=> {
+    e.preventDefault();
+    window.location.href ="dashboard.html";
   })
 </script>
 {% endblock %}
