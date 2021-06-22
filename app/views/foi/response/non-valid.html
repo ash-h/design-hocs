@@ -1,0 +1,30 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+        <h1 class="govuk-heading-l">Respond to non valid request</h1>
+        <span class="govuk-hint">case reference: XXXXXXXX</span>
+        <p class="govuk-body">
+            Download template
+        </p>
+        <a href="#" class="govuk-link">invalid request template</a>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}

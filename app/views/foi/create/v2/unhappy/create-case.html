@@ -1,0 +1,162 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <form action="response-confirmation.html">
+    <span class="govuk-caption-l">Step 1 of 2</span>
+    <h1 class="govuk-heading-l">
+      FOI Case creation
+    </h1>{{releaseVersion | log }}
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+        <legend class="govuk-fieldset__legend">
+          Date correspondence received in Home Office
+        </legend>
+        <div id="passport-issued-hint" class="govuk-hint">
+          For example, 12 11 2007
+        </div>
+        <div class="govuk-date-input" id="passport-issued">
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                Day
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                Month
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                Year
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+        <legend class="govuk-fieldset__legend">
+          Date correspondence received in KIMU
+        </legend>
+        <div id="passport-issued-hint" class="govuk-hint">
+          For example, 12 11 2007
+        </div>
+        <div class="govuk-date-input" id="passport-issued">
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                Day
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                Month
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                Year
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend">
+          How was the request received?
+        </legend>
+        <div class="govuk-radios c-list">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="post" name="where-do-you-live" type="radio" value="england">
+            <label class="govuk-label govuk-radios__label" for="post">
+              Post
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="email" name="where-do-you-live" type="radio" value="scotland">
+            <label class="govuk-label govuk-radios__label" for="email">
+              Email
+            </label>
+          </div>
+        </div>
+
+      </fieldset>
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="file-upload-1">
+        Upload a file
+      </label>
+      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    </div>
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="more-detail">
+        Request Question
+      </label>
+      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+    </div>
+    <button class="govuk-button button-secondary cancel-button" data-module="govuk-button">
+    Cancel
+  </button>
+    <button class="govuk-button save-button" data-module="govuk-button">
+      Save and continue
+    </button>
+    </form>
+  </div>
+  <div class="govuk-grid-column-two-thirds">
+    {% block rightr %}
+    {% include "includes/decs.html" %}
+    {% endblock %}
+  </div>
+</div>
+
+
+
+{% endblock %}
+{% block scripts%}
+<script>
+  console.log("f");
+  const save = document.getElementsByClassName('save-button')[0];
+  const cancel = document.getElementsByClassName('cancel-button')[0];
+  const items = document.getElementsByClassName('c-list')[0];
+  const post = document.getElementById('post');
+
+  save.addEventListener("click", (e)=> {
+    e.preventDefault();
+    if(post.checked) {
+      console.log('post');
+      window.location.href = "post"
+    } else {
+      window.location.href = "email"
+    }
+  })
+
+  cancel.addEventListener("click", (e)=> {
+    e.preventDefault();
+    window.location.href ="dashboard.html";
+  })
+</script>
+{% endblock %}

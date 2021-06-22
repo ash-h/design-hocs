@@ -1,0 +1,68 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        <form action="response-confirmation.html">
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+                        <h1 class="govuk-fieldset__heading">
+                            Allocate this case to the relevant team
+                        </h1>
+                        <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                    </legend>
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="team">
+                            Teams
+                        </label>
+                        <select class="govuk-select" id="team" name="team">
+                            <option value="published">Team name</option>
+                            <option value="published">Team name</option>
+                            <option value="published">Team name</option>
+                            <option value="published">Team name</option>
+                            <option value="published">Team name</option>
+                            <option value="published">Team name</option>
+                            <option value="published">Team name</option>
+                            <option value="published">Team name</option>
+
+                        </select>
+                    </div>
+                    <div class="govuk-form-group ">
+                        <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--s" for="more-detail">
+                            Enter any supporting information (optional)
+                        </label>
+                        </h2>
+                        <div id="more-detail-hint" class="govuk-hint">
+                            If you have selected other you may want to add further details about this case.
+                        </div>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                    </div>
+                </fieldset>
+                <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
+                    Continue
+                </button>
+                <br>
+                <a href="step-one.html" class="govuk-back-link">Back</a>
+            </div>
+        </form>
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}
