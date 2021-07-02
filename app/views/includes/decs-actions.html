@@ -1,6 +1,4 @@
 <div class="govuk-body">
-    {% from "govuk/components/tabs/macro.njk" import govukTabs %}
-    {% from "govuk/components/table/macro.njk" import govukTable %}
 
     {% set documentsHtml %}
     <a href="" class="govuk-link">Manage documents</a>
@@ -69,10 +67,15 @@
     {% endset -%}
 
     {% set actionsHtml %}
-    <h2 class="govuk-heading-l"></h2>
-    <h3>Extensions</h3>
+    <h2 class="govuk-heading-m">Case actions</h2>
+    <h3 class="govuk-heading-s">Extensions</h3>
     <p>Apply an extension to this case</p>
     <a href="#">extend this case</a>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h3 class="govuk-heading-s">Approvals</h3>
+    <p>Mark as send to Spad</p>
+    <a href="#">with spad</a>
     {% endset -%}
 
     {{ govukTabs({
