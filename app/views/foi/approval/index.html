@@ -1,0 +1,69 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Data Input
+        </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                    <p class='govuk-body'>This is the content for Writing well for the web.</p>
+                </div>
+            </div>
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          KIMU Allocation
+        </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                    <p class='govuk-body'>This is the content for Writing well for specialists.</p>
+                </div>
+            </div>
+
+
+        </div>
+        <h3 class="govuk-heading-m">Send for approval</h3>
+
+        <div class="govuk-form-group">
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="approval">
+                    Who needs to approve this request
+                </label>
+                <select class="govuk-select" id="approval" name="approval">
+                    <option value="published">SCS</option>
+                    <option value="updated" selected>Spad</option>
+                    <option value="views">Private office</option>
+                    <option value="comments">G6/G7</option>
+                </select>
+            </div>
+        </div>
+        <a class="govuk-button" href="another-approval.html">Send for approval</a>
+        <a class="govuk-button govuk-button--secondary" href="reject.html">Cancel</a>
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+
+{% endblock %}

@@ -1,0 +1,51 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+        <form action="confirmation.html" >
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Apply exemption<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                    </h1>
+                </legend>
+                <div class="govuk-form-group">
+                    <div class="govuk-form-group">
+                        <label class="govuk-label" for="sort">
+                            Select an exemption
+                        </label>
+                        <select class="govuk-select" id="sort" name="sort">
+                            <option value="published">Type of exemption</option>
+                            <option value="updated" selected>Type of exemption</option>
+                            <option value="views">Type of exemption</option>
+                            <option value="comments">Type of exemption</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <br>
+            <button class="govuk-button" data-module="govuk-button">
+                Apply exemption
+            </button>
+            <br>
+            <a href="index.html#actions" class="govuk-back-link">Back</a>
+        </div>
+      </form>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs-actions.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}

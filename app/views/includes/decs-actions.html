@@ -73,9 +73,13 @@
     <a href="#">extend this case</a>
 
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-    <h3 class="govuk-heading-s">Private office interest</h3>
+    <h3 class="govuk-heading-s">Request approval</h3>
     <p>If you feel this request requires private office input or the case has been requested by the private office</p>
-    <a href="#">Send request to Private Office</a>
+    <a href="#">Send request for approval</a>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h3 class="govuk-heading-s">Exemptions</h3>
+    <p>If you feel this request requires private office input or the case has been requested by the private office</p>
+    <a href="../../foi/exemptions/select-exemption.html">Apply an exemption to this case</a>
     {% endset -%}
 
     {{ govukTabs({
@@ -109,7 +113,7 @@
     }
     },
     {
-    label: "Actions",
+    label: "Case actions",
     id: "actions",
     panel: {
     html: actionsHtml

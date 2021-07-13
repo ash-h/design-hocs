@@ -1,0 +1,57 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="../index.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <form action="check-your-answers.html">
+      <span class="govuk-caption-l">Step 2 of 2</span>
+      <h1 class="govuk-heading-l">
+        Record Correspondent details
+      </h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Full Name
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+      </div>
+
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="email">
+          Email address
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="email" name="width-20" type="text">
+      </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="company">
+            Company (optional)
+          </label>
+          <input class="govuk-input govuk-input--width-20" id="company" name="width-20" type="text">
+        </div>
+
+      <button class="govuk-button" data-module="govuk-button">
+        Save
+      </button>
+
+      </form>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
