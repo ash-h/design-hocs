@@ -1,0 +1,54 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+      <form>
+    <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+                    <h1 class="govuk-fieldset__heading">
+                        Is this a valid request?
+                    </h1>
+                    <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                </legend>
+                <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="valid-request" name="is-this-valid" type="radio" value="Yes"data-url="valid">
+                        <label class="govuk-label govuk-radios__label" for="valid-request">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="valid-request-2" name="is-this-valid" type="radio" value="No" data-url="non-valid">
+                        <label class="govuk-label govuk-radios__label" for="valid-request-2">
+                            No
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+      <br>
+        <button class="govuk-button request-button" data-module="govuk-button">
+            Continue
+        </button>
+      </form>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}
