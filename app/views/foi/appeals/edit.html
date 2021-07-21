@@ -9,8 +9,8 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-        <h1 class="govuk-heading-l" id="anotherappeal">
-            Approvals<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+        <h1 class="govuk-heading-l">
+            Appeals<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
         </h1>
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
             <div class="govuk-accordion__section ">
@@ -49,18 +49,30 @@
                     <p class='govuk-body'>KIMU content</p>
                 </div>
             </div>
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                                 Approval
+                                </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                    <p class='govuk-body'>KIMU content</p>
+                </div>
+            </div>
 
 
         </div>
-        <h3 class="govuk-heading-m">Approvals</h3>
+        <h3 class="govuk-heading-m" id="appeals">Appeals</h3>
 
 
         <div class="govuk-body">
-            <p class="govuk-heading-s">Update approval</p>
+            <p class="govuk-heading-s">Update appeal</p>
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend">
-                            Has this been approved?
+                            Has this been completed?
                     </legend>
                     <div class="govuk-radios govuk-radios--small">
                         <div class="govuk-radios__item">
@@ -83,7 +95,7 @@
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                     <legend class="govuk-fieldset__legend">
-                        When was this approved?
+                        When was this completed?
                     </legend>
                     <div id="passport-issued-hint" class="govuk-hint">
                         For example, 12 11 2007
@@ -113,21 +125,29 @@
                     </div>
 
                 </fieldset>
-                <fieldset class="govuk-fieldset govuk-!-margin-top-6">
+            </div>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
                     <legend class="govuk-fieldset__legend">
-                        Has this been approved?
+                        what was the outcome?
                     </legend>
                     <div class="govuk-radios govuk-radios--small">
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="one" name="changed-name" type="radio" value="yes">
                             <label class="govuk-label govuk-radios__label" for="changed-name">
-                                Option one
+                                Option 1
                             </label>
                         </div>
                         <div class="govuk-radios__item">
                             <input class="govuk-radios__input" id="two" name="changed-name" type="radio" value="no">
                             <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                                Option two
+                                Option 2
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="three" name="changed-name" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                Option 3
                             </label>
                         </div>
                     </div>
@@ -135,11 +155,10 @@
                 </fieldset>
 
             </div>
-
         </div>
     <div class="govuk-!-margin-top-6">
-        <a class="govuk-button" href="approval-complete.html">Continue</a>
-        <a class="govuk-button govuk-button--secondary" href="another-approval.html">Cancel</a>
+        <a class="govuk-button" href="appeal-complete.html">Update</a>
+        <a class="govuk-button govuk-button--secondary" href="another-appeal.html">Cancel</a>
     </div>
 
 
@@ -150,8 +169,5 @@
       {% endblock %}
     </div>
   </div>
-
-{% endblock %}
-{% block scripts%}
 
 {% endblock %}

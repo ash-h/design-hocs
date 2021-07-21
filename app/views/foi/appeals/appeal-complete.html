@@ -9,7 +9,7 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-        <h1 class="govuk-heading-l">
+        <h1 class="govuk-heading-l" id="anotherappeal">
             Appeals<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
         </h1>
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
@@ -64,24 +64,25 @@
 
 
         </div>
-        <h3 class="govuk-heading-m">Log an appeal</h3>
+        <h3 class="govuk-heading-m">Appeals</h3>
 
-        <div class="govuk-form-group">
-            <div class="govuk-form-group">
-                <label class="govuk-label" for="appeal">
-                    Which type of appeal needs to be applied?
-                </label>
-                <select class="govuk-select" id="appeal" name="appeal">
-                    <option value="published">Internal review</option>
-                    <option value="updated" selected>ICO review</option>
-                    <option value="views">First Tier Tribunal</option>
-                    <option value="views">Upper Tribunal</option>
-                    <option value="comments">Court of appeal</option>
-                </select>
-            </div>
+
+        <div class="govuk-body">
+            <p class="govuk-heading-s">Current appeals</p>
+            <span>ICO  </span> <span class="">Completed</span>
+            <span>
+                <a class="govuk-!-padding-left-8" href="edit.html#anotherappeal">Update</a>
+            </span>
+            <ul class="govuk-list govuk-!-margin-top-6">
+                <li><a class="" href="index.html">add another appeal</a></li>
+            </ul>
+
         </div>
-        <a class="govuk-button" href="another-appeal.html#anotherappeal">Log Appeal</a>
-        <a class="govuk-button govuk-button--secondary" href="reject.html">Cancel</a>
+
+    <div class="govuk-!-margin-top-6">
+        <a class="govuk-button" href="reject.html">Continue</a>
+    </div>
+
 
     </div>
     <div class="govuk-grid-column-two-thirds">
