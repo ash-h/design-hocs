@@ -113,26 +113,18 @@
                     </div>
 
                 </fieldset>
-                <fieldset class="govuk-fieldset govuk-!-margin-top-6">
-                    <legend class="govuk-fieldset__legend">
-                        Has this been approved?
-                    </legend>
-                    <div class="govuk-radios govuk-radios--small">
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="one" name="changed-name" type="radio" value="yes">
-                            <label class="govuk-label govuk-radios__label" for="changed-name">
-                                Option one
-                            </label>
-                        </div>
-                        <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="two" name="changed-name" type="radio" value="no">
-                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
-                                Option two
-                            </label>
-                        </div>
-                    </div>
-
-                </fieldset>
+                <div class="govuk-form-group govuk-!-margin-top-6">
+                    <label class="govuk-label" for="event-name">
+                        Who approved the request?
+                    </label>
+                    <input class="govuk-input" id="event-name" name="event-name" type="text">
+                </div>
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="more-detail">
+                        Can you provide more detail?
+                    </label>
+                    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+                </div>
 
             </div>
 

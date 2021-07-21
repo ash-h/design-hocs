@@ -11,7 +11,7 @@
     <div class="govuk-grid-column-one-third">
 
         <h1 class="govuk-heading-l" id="anotherappeal">
-            Approvals<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+            Dispatch<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
         </h1>
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
             <div class="govuk-accordion__section ">
@@ -51,25 +51,44 @@
                 </div>
             </div>
 
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                                  Approval
+                                </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                    <p class='govuk-body'>KIMU content</p>
+                </div>
+            </div>
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-5">
+                                  Outcome
+                                </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-5" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                    <p class='govuk-body'>KIMU content</p>
+                </div>
+            </div>
+
 
         </div>
-        <h3 class="govuk-heading-m">Approvals</h3>
-        <div class="govuk-body">
-            <p>Case approvals</p>
-            <span>ICO  </span> <span class="">complete</span>
-            <span>
-                <a class="govuk-!-padding-left-8" href="#">Update</a>
-            </span>
-
+        <h3 class="govuk-heading-m">Dispatch case</h3>
+        <div class="govuk-form-group">
+            <p>Send request to requester</p>
         </div>
-        <p class="govuk-body"><a class="" href="index.html">Add another</a></p>
 
-        <a class="govuk-button" href="../outcome/index.html">Continue</a>
+        <a class="govuk-button" href="#">Dispatch</a>
 
     </div>
     <div class="govuk-grid-column-two-thirds">
       {% block rightr %}
-      {% include "includes/decs.html" %}
+      {% include "includes/decs-actions.html" %}
       {% endblock %}
     </div>
   </div>
