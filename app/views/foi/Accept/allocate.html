@@ -1,0 +1,66 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-one-third">
+<!--        <div class="govuk-panel govuk-panel&#45;&#45;confirmation">-->
+<!--            <h1 class="govuk-panel__title">-->
+<!--                Case accepted-->
+<!--            </h1>-->
+<!--            <div class="govuk-panel__body">-->
+<!--                Case deadline: of 12 August 2021-->
+<!--            </div>-->
+
+<!--        </div>-->
+        <h1 class="govuk-heading-l">
+            Allocate this case to a team member <span class="govuk-caption-l">Request: <strong>XXXXXXXXXX</strong></span>
+        </h1>
+
+        <div class="govuk-form-group govuk-!-margin-top-6">
+            <label class="govuk-label" for="hub">
+                Who will be dealing with this request
+            </label>
+            <select class="govuk-select" id="hub" name="hub">
+                <option value="published">Team member 1</option>
+                <option value="published">Team member 2</option>
+                <option value="published">Team member 3</option>
+                <option value="published">Team member 4</option>
+                <option value="published">Team member 5</option>
+                <option value="published">Team member 6</option>
+                <option value="published">Team member 7</option>
+                <option value="published">Team member 8</option>
+
+            </select>
+        </div>
+
+    <div>
+        <a href="confirmation.html" class="govuk-button">Allocate</a>
+    </div>
+<!--        <h2 class="govuk-heading-m">Next steps</h2>-->
+<!--        <p class="govuk-body">-->
+<!--            <ul class="govuk-list">-->
+<!--                <li><a href="../create/dashboard.html" class="govuk-link">Return to your dashboard</a></li>-->
+<!--                <li><a href="draft" class="govuk-link">continue to drafting</a></li>-->
+<!--            </ul>-->
+
+<!--        </p>-->
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}

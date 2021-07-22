@@ -1,6 +1,4 @@
 <div class="govuk-body">
-    {% from "govuk/components/tabs/macro.njk" import govukTabs %}
-    {% from "govuk/components/table/macro.njk" import govukTable %}
 
     {% set documentsHtml %}
     <a href="" class="govuk-link">Manage documents</a>
@@ -21,7 +19,6 @@
     {% endset -%}
 
     {% set timelineHtml %}
-    <h2 class="govuk-heading-l">To Do</h2>
     <div class="row">
         <div class="">
             <div class="timeline">
@@ -69,6 +66,22 @@
     <h3>placeholder</h3>
     {% endset -%}
 
+    {% set actionsHtml %}
+    <h2 class="govuk-heading-m">Case actions</h2>
+    <h3 class="govuk-heading-s">Extensions</h3>
+    <p>Apply an extension to this case.</p>
+    <a href="#">extend this case</a>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h3 class="govuk-heading-s">Appeals</h3>
+    <p>Record an appeal against this request.</p>
+    <a href="/foi/appeals/index.html">Record an appeal</a>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h3 class="govuk-heading-s">Exemptions</h3>
+    <p>Apply an extension to this case.</p>
+    <a href="../../foi/exemptions/select-exemption.html">Apply an exemption to this case</a>
+    {% endset -%}
+
     {{ govukTabs({
     items: [
     {
@@ -97,6 +110,13 @@
     id: "people",
     panel: {
     html: peopleHtml
+    }
+    },
+    {
+    label: "Case actions",
+    id: "actions",
+    panel: {
+    html: actionsHtml
     }
     }
     ]

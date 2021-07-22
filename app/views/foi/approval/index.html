@@ -61,9 +61,9 @@
                 </label>
                 <select class="govuk-select" id="approval" name="approval">
                     <option value="published">SCS</option>
-                    <option value="updated" selected>Spad</option>
+                    <option value="updated" >Spad</option>
                     <option value="views">Private office</option>
-                    <option value="comments">G6/G7</option>
+                    <option value="comments" selected>G6/G7</option>
                 </select>
             </div>
         </div>
@@ -73,7 +73,7 @@
     </div>
     <div class="govuk-grid-column-two-thirds">
       {% block rightr %}
-      {% include "includes/decs.html" %}
+      {% include "includes/decs-actions.html" %}
       {% endblock %}
     </div>
   </div>

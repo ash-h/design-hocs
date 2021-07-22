@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout_decs.html" %}
 
 {% block pageTitle %}
   GOV.UK Prototype Kit
@@ -26,16 +26,16 @@
 
   <div class="govuk-grid-row govuk-!-padding-bottom-6">
     <div class="govuk-grid-column-full">
-      <h2 class="govuk-heading-m">Your cases</h2>
+
 
       <table class="govuk-table">
-        <caption class="govuk-table__caption govuk-table__caption--m">Month you apply</caption>
+        <caption class="govuk-table__caption govuk-table__caption--m">Your cases</caption>
         <thead class="govuk-table__head">
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header app-custom-class">Select</th>
           <th scope="col" class="govuk-table__header app-custom-class">Reference</th>
           <th scope="col" class="govuk-table__header app-custom-class">Current stage</th>
-          <th scope="col" class="govuk-table__header app-custom-class">Reason for escalation</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Case worker</th>
           <th scope="col" class="govuk-table__header app-custom-class">Team/Owner</th>
           <th scope="col" class="govuk-table__header app-custom-class">Deadline</th>
         </tr>
@@ -59,11 +59,11 @@
               </div>
             </div>
           </td>
-          <td class="govuk-table__cell"><a href="case.html">xxxxxxxxxxx</a></td>
-          <td class="govuk-table__cell">Awaiting response</td>
-          <td class="govuk-table__cell">reason code</td>
+          <td class="govuk-table__cell"><a href="index.html">xxxxxxxxxxx</a></td>
+          <td class="govuk-table__cell">Awaiting acceptance</td>
+          <td class="govuk-table__cell">Case worker</td>
           <td class="govuk-table__cell">Team name</td>
-          <td class="govuk-table__cell">12/07/2020</td>
+          <td class="govuk-table__cell">12/08/2021</td>
         </tr>
 
         </tbody>
