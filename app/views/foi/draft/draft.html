@@ -9,9 +9,8 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-one-third">
-
-        <h1 class="govuk-heading-l" id="anotherappeal">
-            Dispatch<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+        <h1 class="govuk-heading-l">
+            Appeals<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
         </h1>
         <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
             <div class="govuk-accordion__section ">
@@ -50,12 +49,11 @@
                     <p class='govuk-body'>KIMU content</p>
                 </div>
             </div>
-
             <div class="govuk-accordion__section ">
                 <div class="govuk-accordion__section-header">
                     <h2 class="govuk-accordion__section-heading">
                                 <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-                                  Approval
+                                 Approval
                                 </span>
                     </h2>
                 </div>
@@ -63,27 +61,27 @@
                     <p class='govuk-body'>KIMU content</p>
                 </div>
             </div>
-<!--            <div class="govuk-accordion__section ">-->
-<!--                <div class="govuk-accordion__section-header">-->
-<!--                    <h2 class="govuk-accordion__section-heading">-->
-<!--                                <span class="govuk-accordion__section-button" id="accordion-default-heading-5">-->
-<!--                                  Outcome-->
-<!--                                </span>-->
-<!--                    </h2>-->
-<!--                </div>-->
-<!--                <div id="accordion-default-content-5" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">-->
-<!--                    <p class='govuk-body'>KIMU content</p>-->
-<!--                </div>-->
-<!--            </div>-->
 
 
         </div>
-        <h3 class="govuk-heading-m">Dispatch case</h3>
+        <h3 class="govuk-heading-m">Log an appeal</h3>
+
         <div class="govuk-form-group">
-<!--            <p>Send request to requester</p>-->
+            <div class="govuk-form-group">
+                <label class="govuk-label" for="appeal">
+                    Which type of appeal needs to be applied?
+                </label>
+                <select class="govuk-select" id="appeal" name="appeal">
+                    <option value="published">Internal review</option>
+                    <option value="updated" selected>ICO review</option>
+                    <option value="views">First Tier Tribunal</option>
+                    <option value="views">Upper Tribunal</option>
+                    <option value="comments">Court of appeal</option>
+                </select>
+            </div>
         </div>
-
-        <a class="govuk-button" href="../outcome/index.html">Dispatch</a>
+        <a class="govuk-button" href="another-appeal.html#anotherappeal">Log Appeal</a>
+        <a class="govuk-button govuk-button--secondary" href="reject.html">Cancel</a>
 
     </div>
     <div class="govuk-grid-column-two-thirds">
