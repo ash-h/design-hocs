@@ -1,0 +1,7 @@
+.checkboxes-columns {
+  display: flex;
+  flex-flow: wrap;
+  >* {
+    flex:1 1 19.5%;
+  }
+}

@@ -1,0 +1,62 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="../index.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <h1 class="govuk-heading-l">Check your answers</h1>
+      <h2 class="govuk-heading-m">Exemptions</h2>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Section 22
+          </dt>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="exemptions.html">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Section 44
+          </dt>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="exemptions.html">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+      <h2 class="govuk-heading-m">Outcome</h2>
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Full release
+          </dt>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link" href="outcome.html">
+              Change<span class="govuk-visually-hidden"> outcome</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+      <a class="govuk-button" href="confirmation.html">Confirm and dispatch</a>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}

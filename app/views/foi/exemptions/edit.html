@@ -1,0 +1,173 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+        <h1 class="govuk-heading-l">
+            Appeals<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+        </h1>
+        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                                  Case creation
+                                </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                    <p class='govuk-body'>Data input content</p>
+                </div>
+            </div>
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                                  Allocation
+                                </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                    <p class='govuk-body'>KIMU content</p>
+                </div>
+            </div>
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                                  Drafting
+                                </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                    <p class='govuk-body'>KIMU content</p>
+                </div>
+            </div>
+            <div class="govuk-accordion__section ">
+                <div class="govuk-accordion__section-header">
+                    <h2 class="govuk-accordion__section-heading">
+                                <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                                 Approval
+                                </span>
+                    </h2>
+                </div>
+                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
+                    <p class='govuk-body'>KIMU content</p>
+                </div>
+            </div>
+
+
+        </div>
+        <h3 class="govuk-heading-m" id="appeals">Exemptions</h3>
+
+
+        <div class="govuk-body">
+            <p class="govuk-heading-s">Update exemption</p>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend">
+                            Has this been completed?
+                    </legend>
+                    <div class="govuk-radios govuk-radios--small">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </div>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                    <legend class="govuk-fieldset__legend">
+                        When was this completed?
+                    </legend>
+                    <div id="passport-issued-hint" class="govuk-hint">
+                        For example, 12 11 2007
+                    </div>
+                    <div class="govuk-date-input" id="passport-issued">
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                                    Day
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                                    Month
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                        </div>
+                        <div class="govuk-date-input__item">
+                            <div class="govuk-form-group">
+                                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                                    Year
+                                </label>
+                                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </div>
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                    <legend class="govuk-fieldset__legend">
+                        what was the outcome?
+                    </legend>
+                    <div class="govuk-radios govuk-radios--small">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="one" name="changed-name" type="radio" value="yes">
+                            <label class="govuk-label govuk-radios__label" for="changed-name">
+                                Option 1
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="two" name="changed-name" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                Option 2
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="three" name="changed-name" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                                Option 3
+                            </label>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </div>
+        </div>
+    <div class="govuk-!-margin-top-6">
+        <a class="govuk-button" href="appeal-complete.html">Update</a>
+        <a class="govuk-button govuk-button--secondary" href="another-appeal.html">Cancel</a>
+    </div>
+
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}

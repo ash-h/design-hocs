@@ -11,62 +11,9 @@
     <div class="govuk-grid-column-one-third">
 
         <h1 class="govuk-heading-l" id="anotherappeal">
-            Outcome<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+            Case outcome<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
         </h1>
-        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-            <div class="govuk-accordion__section ">
-                <div class="govuk-accordion__section-header">
-                    <h2 class="govuk-accordion__section-heading">
-                                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                                  Data Input
-                                </span>
-                    </h2>
-                </div>
-                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                    <p class='govuk-body'>Data input content</p>
-                </div>
-            </div>
-            <div class="govuk-accordion__section ">
-                <div class="govuk-accordion__section-header">
-                    <h2 class="govuk-accordion__section-heading">
-                                <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-                                  KIMU Allocation
-                                </span>
-                    </h2>
-                </div>
-                <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-                    <p class='govuk-body'>KIMU content</p>
-                </div>
-            </div>
-            <div class="govuk-accordion__section ">
-                <div class="govuk-accordion__section-header">
-                    <h2 class="govuk-accordion__section-heading">
-                                <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
-                                  Drafting
-                                </span>
-                    </h2>
-                </div>
-                <div id="accordion-default-content-3" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-                    <p class='govuk-body'>KIMU content</p>
-                </div>
-            </div>
 
-            <div class="govuk-accordion__section ">
-                <div class="govuk-accordion__section-header">
-                    <h2 class="govuk-accordion__section-heading">
-                                <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
-                                  Approval
-                                </span>
-                    </h2>
-                </div>
-                <div id="accordion-default-content-4" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-3">
-                    <p class='govuk-body'>KIMU content</p>
-                </div>
-            </div>
-
-
-        </div>
-        <h3 class="govuk-heading-m">Case outcome</h3>
         <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
                 <legend class="govuk-fieldset__legend">
@@ -114,13 +61,46 @@
             </fieldset>
         </div>
 
-        <a class="govuk-button" href="#">Continue and dispatch request</a>
+        <a class="govuk-button" href="#">Record outcome and dispatch request</a>
 
     </div>
     <div class="govuk-grid-column-two-thirds">
-      {% block rightr %}
-      {% include "includes/decs.html" %}
-      {% endblock %}
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                    <h1 class="govuk-fieldset__heading">
+                        Organisation
+                    </h1>
+                </legend>
+                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                            HM Revenue and Customs (HMRC)
+                        </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                        <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                            Employment Tribunal
+                        </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+                        <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+                            Ministry of Defence
+                        </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+                        <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+                            Department for Transport
+                        </label>
+                    </div>
+                </div>
+
+            </fieldset>
+        </div>
     </div>
   </div>
 

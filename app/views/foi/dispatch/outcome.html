@@ -1,0 +1,96 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+        <h1 class="govuk-heading-l" id="anotherappeal">
+            Case outcome<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+        </h1>
+
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend">
+                    What is the outcome of this case?
+                </legend>
+                <div class="govuk-radios govuk-radios--small">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="vexatious" name="outcome" type="radio" value="vexatious">
+                        <label class="govuk-label govuk-radios__label" for="vexatious">
+                            Request vexatious - section 14 (1)
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="repeat" name="outcome" type="radio" value="repeat">
+                        <label class="govuk-label govuk-radios__label" for="repeat">
+                            Repeat request - section 14 (2)
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="unclear" name="outcome" type="radio" value="unclear">
+                        <label class="govuk-label govuk-radios__label" for="unclear">
+                            Request unclear / advice and assistance provided
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="no-information" name="outcome" type="no-information" value="no-information">
+                        <label class="govuk-label govuk-radios__label" for="no-information">
+                            No information found/held
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="witheld-full" name="outcome" type="radio" value="witheld-full">
+                        <label class="govuk-label govuk-radios__label" for="witheld-full">
+                            Information witheld in full
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="released-in-full" name="outcome" type="radio" value="released-in-full">
+                        <label class="govuk-label govuk-radios__label" for="released-in-full">
+                            Information released in full
+                        </label>
+                    </div>
+
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="released-in-part" name="outcome" type="radio" value="released-in-part">
+                        <label class="govuk-label govuk-radios__label" for="released-in-part">
+                            Information released in part
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="already-in-public-domain" name="outcome" type="radio" value="already-in-public-domain">
+                        <label class="govuk-label govuk-radios__label" for="already-in-public-domain">
+                            Information already in public domain
+                        </label>
+                    </div>
+<!--                    <div class="govuk-radios__item">-->
+<!--                        <input class="govuk-radios__input" id="full-disclosure" name="where-do-you-live" type="radio" value="full-disclosure">-->
+<!--                        <label class="govuk-label govuk-radios__label" for="full-disclosure">-->
+<!--                            Information released in full-->
+<!--                        </label>-->
+<!--                    </div>-->
+<!--                    <div class="govuk-radios__item">-->
+<!--                        <input class="govuk-radios__input" id="full-disclosure" name="where-do-you-live" type="radio" value="full-disclosure">-->
+<!--                        <label class="govuk-label govuk-radios__label" for="full-disclosure">-->
+<!--                            Information released in full-->
+<!--                        </label>-->
+<!--                    </div>-->
+                </div>
+
+            </fieldset>
+        </div>
+
+        <a class="govuk-button" href="check-your-answers.html">Apply outcome</a>
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+    </div>
+  </div>
+
+{% endblock %}
