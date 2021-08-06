@@ -1,0 +1,72 @@
+
+{% extends "layout_correspondence.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+      <form>
+    <div class="govuk-grid-column-one-third">
+        <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+
+                    <h1 class="govuk-fieldset__heading">
+                        What is the outcome of this case?
+                    </h1>
+                    <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+                </legend>
+                <div class="govuk-radios">
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="valid-request" name="is-this-valid" type="radio" value="Yes" data-url="exemptions">
+                        <label class="govuk-label govuk-radios__label" for="valid-request">
+                            NO Release (procedural)
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="valid-request-2" name="is-this-valid" type="radio" value="No" data-url="outcome">
+                        <label class="govuk-label govuk-radios__label" for="valid-request-2">
+                            Neither confirm nor deny
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="valid-request-2" name="is-this-valid" type="radio" value="No" data-url="outcome">
+                        <label class="govuk-label govuk-radios__label" for="valid-request-2">
+                            Release in Full
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="valid-request-2" name="is-this-valid" type="radio" value="No" data-url="outcome">
+                        <label class="govuk-label govuk-radios__label" for="valid-request-2">
+                            Release in part
+                        </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                        <input class="govuk-radios__input" id="valid-request-2" name="is-this-valid" type="radio" value="No" data-url="outcome">
+                        <label class="govuk-label govuk-radios__label" for="valid-request-2">
+                            Confirm information is held but not releasing
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+      <br>
+        <button class="govuk-button request-button" data-module="govuk-button">
+            Continue
+        </button>
+      </form>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      {% block rightr %}
+      {% include "includes/decs.html" %}
+      {% endblock %}
+    </div>
+  </div>
+
+{% endblock %}
+{% block scripts%}
+<script src="../../public/javascripts/valid-request.js"></script>
+{% endblock %}

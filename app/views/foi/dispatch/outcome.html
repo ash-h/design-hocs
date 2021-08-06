@@ -8,16 +8,34 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
+    <div class="govuk-grid-column-two-thirds">
 
         <h1 class="govuk-heading-l" id="anotherappeal">
-            Case outcome<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
+            Record the case outcome<span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
         </h1>
-
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-weight-bold" for="type">
+                What type of case is this?
+            </label>
+            <select class="govuk-select" id="type" name="type">
+                <option value="foi">FoI</option>
+                <option value="eir" selected>EIR</option>
+                <option value="mixed">Mixed</option>
+            </select>
+        </div>
+        <div class="govuk-form-group">
+            <label class="govuk-label govuk-!-font-weight-bold" for="medium">
+                How will the response be sent?
+            </label>
+            <select class="govuk-select" id="medium" name="medium">
+                <option value="post">Post</option>
+                <option value="email" selected>Email</option>
+            </select>
+        </div>
         <div class="govuk-form-group">
             <fieldset class="govuk-fieldset">
-                <legend class="govuk-fieldset__legend">
-                    What is the outcome of this case?
+                <legend class="govuk-fieldset__legend govuk-!-font-weight-bold">
+                    What was the outcome of this case?
                 </legend>
                 <div class="govuk-radios govuk-radios--small">
                     <div class="govuk-radios__item">
@@ -86,7 +104,7 @@
             </fieldset>
         </div>
 
-        <a class="govuk-button" href="check-your-answers.html">Apply outcome</a>
+        <a class="govuk-button" href="exemptions.html">Continue</a>
 
     </div>
     <div class="govuk-grid-column-two-thirds">
