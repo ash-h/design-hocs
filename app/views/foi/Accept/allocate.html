@@ -20,22 +20,55 @@
 
 <!--        </div>-->
         <h1 class="govuk-heading-l">
-            Allocate this case to a team member <span class="govuk-caption-l">Request: <strong>XXXXXXXXXX</strong></span>
+            Allocate this request <span class="govuk-caption-l">Request: <strong>XXXXXXXXXX</strong></span>
         </h1>
 
         <div class="govuk-form-group govuk-!-margin-top-6">
-            <label class="govuk-label" for="hub">
-                Who will be dealing with this request
+            <label class="govuk-label" for="directorate">
+                Select Directorate
             </label>
-            <select class="govuk-select" id="hub" name="hub">
-                <option value="published">Team member 1</option>
-                <option value="published">Team member 2</option>
-                <option value="published">Team member 3</option>
-                <option value="published">Team member 4</option>
-                <option value="published">Team member 5</option>
-                <option value="published">Team member 6</option>
-                <option value="published">Team member 7</option>
-                <option value="published">Team member 8</option>
+            <select class="govuk-select" id="directorate" name="directorate">
+                <option value="published">Directorate</option>
+                <option value="published">Directorate</option>
+                <option value="published">Directorate</option>
+                <option value="published">Directorate</option>
+                <option value="published">Directorate</option>
+                <option value="published">Directorate</option>
+                <option value="published">Directorate</option>
+                <option value="published">Directorate</option>
+
+            </select>
+        </div>
+        <div class="govuk-form-group govuk-!-margin-top-6">
+            <label class="govuk-label" for="unit">
+                Select Unit
+            </label>
+            <select class="govuk-select" id="unit" name="unit">
+                <option value="published">Unit</option>
+                <option value="published">Unit</option>
+                <option value="published">Unit</option>
+                <option value="published">Unit</option>
+                <option value="published">Unit</option>
+                <option value="published">Unit</option>
+                <option value="published">Unit</option>
+                <option value="published">Unit</option>
+
+            </select>
+        </div>
+        <div class="govuk-form-group govuk-!-margin-top-6">
+            <label class="govuk-label" for="team">
+                Select Team
+            </label>
+            <select class="govuk-select" id="team" name="team">
+                <option value="published">Team</option>
+                <option value="published">Team</option>
+                <option value="published">Team</option>
+                <option value="published">Team</option>
+                <option value="published">Team</option>
+                <option value="published">Team</option>
+                <option value="published">Team</option>
+                <option value="published">Team</option>
+                <option value="published">Team</option>
 
             </select>
         </div>
@@ -60,7 +93,4 @@
     </div>
   </div>
 
-{% endblock %}
-{% block scripts%}
-<script src="../../public/javascripts/valid-request.js"></script>
 {% endblock %}
