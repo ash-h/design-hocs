@@ -2,7 +2,7 @@
 
 const items = document.getElementsByClassName("govuk-radios__input");
 const button = document.getElementsByClassName("request-button")[0];
-const backLink = document.getElementsByClassName('govuk-back-link')[0];
+const backLink = document.getElementsByClassName('back-link')[0];
 
 if(backLink) {
   backLink.addEventListener("click", (e) => {
@@ -17,7 +17,7 @@ if(button) {
     e.preventDefault()
     for (let x of items) {
       if (x.checked) {
-        console.log(x.value, x.getAttribute("data-url"));
+        //console.log(x.value, x.getAttribute("data-url"));
         path = `${x.getAttribute("data-url")}`
         window.location.href = path;
       }

@@ -19,22 +19,6 @@
                         </h1>
                         <span class="govuk-caption-xl">Request: <strong>XXXXXXXXXX</strong></span>
                     </legend>
-                    <div class="govuk-form-group">
-                        <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
-                            <div class="govuk-accordion__section ">
-                                <div class="govuk-accordion__section-header">
-                                    <h2 class="govuk-accordion__section-heading">
-                                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-                                  Case creation
-                                </span>
-                                    </h2>
-                                </div>
-                                <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-                                    <p class='govuk-body'>Case creation content</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                         <div class="govuk-form-group">
                         <label class="govuk-label" for="group">
                             Select Group
@@ -88,13 +72,15 @@
                     </div>
 
                 </fieldset>
-                <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
-                    Allocate case
-                </button>
-                <br>
-                <a href="step-one.html" class="govuk-back-link">Back</a>
+
             </div>
+            <button class="govuk-button govuk-!-margin-top-4" data-module="govuk-button">
+                Allocate case
+            </button>
+            <br>
+
         </form>
+        <a href="workstack.html" class="govuk-back-link">Back</a>
 
     </div>
     <div class="govuk-grid-column-two-thirds">
@@ -104,7 +90,4 @@
     </div>
   </div>
 
-{% endblock %}
-{% block scripts%}
-<script src="../../public/javascripts/valid-request.js"></script>
 {% endblock %}

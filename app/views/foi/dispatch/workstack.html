@@ -1,0 +1,77 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <span class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+        Load case
+      </label>
+      </span>
+      <div id="event-name-hint" class="govuk-hint">
+        For example ABC/1234567/12
+      </div>
+      <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+    </div>
+    <h1 class="govuk-heading-xl">
+      Dashboard
+    </h1>
+  </div>
+</div>
+
+  <div class="govuk-grid-row govuk-!-padding-bottom-6">
+    <div class="govuk-grid-column-full">
+
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Your cases</caption>
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header app-custom-class">Select</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Reference</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Current stage</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Case worker</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Team/Owner</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Deadline</th>
+        </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td  class="govuk-table__cell">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input id="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6"
+                       type="checkbox"
+                       name="selected_cases[]"
+                       class="govuk-checkboxes__input"
+                       value="984c5f2a-5a44-4c25-a6cb-00b9973697b6:cc902011-3595-49ff-9544-52cf5788aae6">
+                  <label class="govuk-label govuk-checkboxes__label"
+                         for="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6">
+                    <span class="govuk-visually-hidden">
+                      value
+                    </span>
+                  </label>
+              </div>
+            </div>
+          </td>
+          <td class="govuk-table__cell"><a href="outcome.html">xxxxxxxxxxx</a></td>
+          <td class="govuk-table__cell">Awaiting acceptance</td>
+          <td class="govuk-table__cell">Case worker</td>
+          <td class="govuk-table__cell">Team name</td>
+          <td class="govuk-table__cell">12/08/2021</td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+
+{% endblock %}
