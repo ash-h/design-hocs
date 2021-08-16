@@ -1,0 +1,102 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-form-group">
+      <span class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+        Find a case or request
+      </label>
+      </span>
+      <div id="event-name-hint" class="govuk-hint">
+        For example request topic, requester name or case reference number
+      </div>
+      <div class="search-group">
+        <input class="govuk-input govuk-!-width-two-thirds" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+        <span class="search-button govuk-body">Find</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="govuk-grid-row govuk-!-padding-bottom-6">
+    <div class="govuk-grid-column-full">
+
+
+      <table class="govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--m">Your cases</caption>
+        <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header app-custom-class">Select</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Requester / Reference</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Current stage/Status</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Topic</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Team/Owner</th>
+          <th scope="col" class="govuk-table__header app-custom-class">Deadline</th>
+        </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td  class="govuk-table__cell">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input id="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6"
+                       type="checkbox"
+                       name="selected_cases[]"
+                       class="govuk-checkboxes__input"
+                       value="984c5f2a-5a44-4c25-a6cb-00b9973697b6:cc902011-3595-49ff-9544-52cf5788aae6">
+                  <label class="govuk-label govuk-checkboxes__label"
+                         for="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6">
+                    <span class="govuk-visually-hidden">
+                      value
+                    </span>
+                  </label>
+              </div>
+            </div>
+          </td>
+          <td class="govuk-table__cell"><span>Felix Lighter</span><br><a href="index.html">xxxxxxxxxxx</a></td>
+          <td class="govuk-table__cell">Awaiting acceptance<span class="govuk-tag govuk-tag--red">draft rejected</span></td>
+          <td class="govuk-table__cell">Animal welfare</td>
+          <td class="govuk-table__cell">Team name<br><span>the drafter</span></td>
+          <td class="govuk-table__cell">12/08/2021<span class="govuk-tag govuk-tag--red">Overdue</span></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td  class="govuk-table__cell">
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input id="6"
+                       type="checkbox"
+                       name="selected_cases[]"
+                       class="govuk-checkboxes__input"
+                       value="984c5f2a-5a44-4c25-a6cb-00b9973697b6:cc902011-3595-49ff-9544-52cf5788aae6">
+                <label class="govuk-label govuk-checkboxes__label"
+                       for="selected_cases_984c5f2a-5a44-4c25-a6cb-00b9973697b6">
+                    <span class="govuk-visually-hidden">
+                      value
+                    </span>
+                </label>
+              </div>
+            </div>
+          </td>
+          <td class="govuk-table__cell"><span>Jack Spang</span><br><a href="index.html">xxxxxxxxxxx</a></td>
+          <td class="govuk-table__cell">Drafting</td>
+          <td class="govuk-table__cell">Spending</td>
+          <td class="govuk-table__cell">Central drafting<br><span>the drafter</span></td>
+          <td class="govuk-table__cell">12/08/2021</td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+
+
+{% endblock %}

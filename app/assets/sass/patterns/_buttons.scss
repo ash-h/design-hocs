@@ -8,6 +8,36 @@
   }
 }
 
+.govuk-table__header {
+  padding:5px;
+  font-size: 1rem;
+  word-break:break-word;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    display: inline-block;
+    content: ' ';
+    background-image: url('/public/images/up-and-down-arrows.svg');
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    height: 12px;
+    top:10px;
+    right:10px;
+    width: 12px;
+  }
+}
+.search-group {
+  display: flex;
+}
+.search-button {
+  background-color: #0B0C0C;
+  display:inline-block;
+  height:40px;
+  color:white;
+  padding:8px;
+  box-sizing: border-box;
+}
 .button-white:hover {
   background-color: darken(#FFF, 5%);
   color: #0b0c0c;
