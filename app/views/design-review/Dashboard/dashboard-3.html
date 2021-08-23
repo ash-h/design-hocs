@@ -1,5 +1,5 @@
 
-{% extends "layout_decs.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
   GOV.UK Prototype Kit
@@ -8,23 +8,27 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <div class="govuk-form-group">
-      <span class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
-        Load case
-      </label>
-      </span>
-      <div id="event-name-hint" class="govuk-hint">
-        For example ABC/1234567/12
-      </div>
-      <input class="govuk-input" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
-    </div>
     <h1 class="govuk-heading-xl">
       Dashboard
     </h1>
+    <div class="govuk-form-group">
+      <span class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
+        Find a case or request
+      </label>
+      </span>
+      <div id="event-name-hint" class="govuk-hint">
+        For example request topic, requester name or case reference number
+      </div>
+      <div class="search-group">
+        <input class="govuk-input govuk-!-width-two-thirds" id="event-name" name="event-name" type="text" aria-describedby="event-name-hint">
+        <span class="search-button govuk-body">Find</span>
+      </div>
+    </div>
+
   </div>
 </div>
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full-width">
+  <div class="govuk-grid-column-two-thirds">
     <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
       <div class="govuk-notification-banner__header">
         <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
@@ -38,48 +42,40 @@
         </p>
       </div>
     </div>
-    <div class="govuk-warning-text">
-      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-      <strong class="govuk-warning-text__text">
-        <span class="govuk-warning-text__assistive">Warning</span>
-        You have <strong>XX</strong> escalated cases. <a class="govuk-link" href="">view all escalated cases</a>
-      </strong>
-    </div>
+
   </div>
 </div>
   <div class="govuk-grid-row govuk-!-padding-bottom-6">
     <div class="govuk-grid-column-one-third">
       <h2 class="govuk-heading-m">Your cases 21</h2>
-<!--      <div class="card">-->
-<!--        <a href="" class="govuk-heading-m card-title">-->
-<!--          <span>2</span>-->
-<!--          <br>-->
-<!--          <span>Cases</span>-->
-<!--        </a>-->
-<!--      </div>-->
+      <div class="card">
+        <div href="" class="govuk-heading-m card-title">
+          <span>2</span>
+          <br>
+          <span>Cases</span>
+        </div>
+      </div>
       <div class="card-status-blue">
-        <span class="govuk-tag govuk-tag--purple">0 Unallocated cases</span> <span><a href="" class="govuk-link">view</a></span>
+        <span class="status-text">0 Unallocated cases</span> <span></span>
       </div>
       <div class="card-status-red">
-        <span class="govuk-tag govuk-tag--red">0 Overdue cases</span>
+        <span class="status-text">2 Overdue cases</span>
       </div>
     </div>
     <div class="govuk-grid-column-one-third">
       <h2 class="govuk-heading-m">Manager cases</h2>
       <div class="card">
-
-        <div class="govuk-!-padding-right-4">
-          <a href="" class="govuk-heading-m card-title">
-            <span>21</span>
-            <br>
-            <span>Cases</span>
-          </a>
-        </div>
-        <div>
-          <span class="govuk-tag govuk-tag--blue">9 unallocated</span>
+        <div href="" class="govuk-heading-m card-title">
+          <span>2</span>
           <br>
-         <span class="govuk-tag govuk-tag--red"> 12overdue</span>
+          <span>Cases</span>
         </div>
+      </div>
+      <div class="card-status-blue">
+        <span class="status-text">0 Unallocated cases</span> <span></span>
+      </div>
+      <div class="card-status-red">
+        <span class="status-text">2 Overdue cases</span>
       </div>
     </div>
   </div>
@@ -87,40 +83,49 @@
   <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-m">Manager cases</h2>
     <div class="card">
-      <a href="" class="govuk-heading-m card-title">
+      <div href="" class="govuk-heading-m card-title">
         <span>2</span>
         <br>
         <span>Cases</span>
-      </a>
+      </div>
     </div>
-    <div class="card-status">
-      <p>0 Overdue cases</p>
+    <div class="card-status-blue">
+      <span class="status-text">0 Unallocated cases</span> <span></span>
+    </div>
+    <div class="card-status-red">
+      <span class="status-text">2 Overdue cases</span>
     </div>
   </div>
   <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-m">Manager cases</h2>
     <div class="card">
-      <a href="" class="govuk-heading-m card-title">
+      <div href="" class="govuk-heading-m card-title">
         <span>2</span>
         <br>
         <span>Cases</span>
-      </a>
+      </div>
     </div>
-    <div class="card-status">
-      <p>0 Overdue cases</p>
+    <div class="card-status-blue">
+      <span class="status-text">0 Unallocated cases</span> <span></span>
+    </div>
+    <div class="card-status-red">
+      <span class="status-text">2 Overdue cases</span>
     </div>
   </div>
   <div class="govuk-grid-column-one-third">
-    <h2 class="govuk-heading-m">Manager cases</h2>
+    <h2 class="govuk-heading-m">Triage team cases</h2>
     <div class="card">
-      <a href="" class="govuk-heading-m card-title">
+      <div href="" class="govuk-heading-m card-title">
         <span>2</span>
         <br>
         <span>Cases</span>
-      </a>
+      </div>
     </div>
-    <div class="card-status">
-      <p>0 Overdue cases</p>
+    <div class="card-status-blue">
+      <span class="status-text">0 Unallocated cases</span> <span></span>
+    </div>
+    <div class="card-status-red">
+      <span class="status-text">2 Overdue cases</span>
     </div>
   </div>
 </div>

@@ -2,23 +2,24 @@
   background-color:  govuk-colour("light-grey");
   padding:10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  font-family: "GDS Transport", arial, sans-serif;
 
+  &.design-two {
+    background-color: transparent;
+    flex-direction: column;
+  }
   &-title {
     text-decoration: none;
     margin-bottom: 0;
   }
-
-
-
 }
 .card__actions {
-  //background:red;
   padding:10px;
 }
 
 .card-status {
-  background-color: govuk-colour("blue");
+  //background-color: govuk-colour("orange");
   padding:0 10px;
 
   &-blue {
@@ -29,6 +30,7 @@
       color: govuk-colour("white");
       font-weight: bold;
       margin: 0;
+      font-family: "GDS Transport", arial, sans-serif;
     }
   }
   &-red {
@@ -39,6 +41,7 @@
       color: govuk-colour("white");
       font-weight: bold;
       margin: 0;
+      font-family: "GDS Transport", arial, sans-serif;
     }
   }
 
@@ -46,5 +49,6 @@
   .status-text {
     color: govuk-colour("white");
     font-weight: bold;
+    font-family: "GDS Transport", arial, sans-serif;
   }
 }
