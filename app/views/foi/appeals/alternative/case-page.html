@@ -1,0 +1,148 @@
+
+{% extends "layout_decs.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+{% block beforeContent %}
+  <a href="index.html" class="govuk-back-link">Back</a>
+{% endblock %}
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      MIN/123456/544
+      <span class="govuk-caption-xl">Sarah.philips@example.com</span>
+    </h1>
+    <h2 class="govuk-heading-m">Case details</h2>
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9 govuk-input--width-30">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Correspondence type
+      </dt>
+      <dd class="govuk-summary-list__value">
+        email
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Allocated user
+      </dt>
+      <dd class="govuk-summary-list__value">
+        Jane Martin
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Team
+      </dt>
+      <dd class="govuk-summary-list__value">
+        Triage team
+      </dd>
+    </div>
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Requester
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <p class="govuk-body">sarah.phillips@example.com</p>
+      </dd>
+    </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Date created
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">12 May 2021</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Status
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <span class="govuk-body govuk-tag govuk-tag--inactive">Closed</span>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Request/Subject
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">How many Badgers are there living near canals</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Last modified
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">14 May 2021</p>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Last modified by
+        </dt>
+        <dd class="govuk-summary-list__value">
+          <p class="govuk-body">Henry Abah</p>
+        </dd>
+      </div>
+  </dl>
+
+
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-m">Actions</h2>
+    <ul class="govuk-list">
+      <li><a href=".././index.html">Log appeal</a></li>
+      <li><a href="#">Apply extension</a></li>
+      <li><a href="#">Close</a></li>
+      <li><a href="#">Dispatch</a></li>
+    </ul>
+
+
+  </div>
+</div>
+
+<!--  <div class="govuk-grid-row">-->
+<!--    <div class="govuk-grid-column-one-third">-->
+<!--      <h1 class="govuk-heading-xl">-->
+<!--        The GOV.UK Prototype Kit-->
+<!--        <span class="govuk-caption-xl">{{releaseVersion}}</span>-->
+<!--      </h1>{{releaseVersion | log }}-->
+<!--      <p>-->
+<!--        This kit lets you rapidly create HTML prototypes of GOV.UK services.-->
+<!--      </p>-->
+
+<!--      <p>-->
+<!--        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.-->
+<!--      </p>-->
+
+<!--      <h2 class="govuk-heading-m">About this page</h2>-->
+
+<!--      <p>We recommend you add links to your prototype to this page, rather than delete it.-->
+<!--        You'll find this page in the kit at '/app/views/index.html'.</p>-->
+
+<!--      <p>You can change the service name by editing the file '/app/config.js'.</p>-->
+
+<!--      <a href="cms/index">Complaints</a>-->
+<!--      <h2 class="govuk-heading-m">Examples and documentation</h2>-->
+
+<!--      <ul class="govuk-list govuk-list&#45;&#45;bullet">-->
+<!--        <li>-->
+<!--          <a href="/docs/tutorials-and-examples">Example pages and documentation</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--          <a href="https://design-system.service.gov.uk">GOV.UK Design System</a>-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--    </div>-->
+<!--    <div class="govuk-grid-column-two-thirds">-->
+<!--      {% block rightr %}-->
+<!--      {% include "includes/decs.html" %}-->
+<!--      {% endblock %}-->
+<!--    </div>-->
+<!--  </div>-->
+
+{% endblock %}
