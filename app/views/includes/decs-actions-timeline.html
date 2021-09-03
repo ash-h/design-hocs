@@ -1,0 +1,142 @@
+<div class="govuk-body">
+
+    {% set documentsHtml %}
+    <a href="" class="govuk-link">Manage documents</a>
+    <h3 class="govuk-heading-m govuk-!-padding-top-6">Original</h3>
+    <p>None</p>
+    <hr>
+    <h3 class="govuk-heading-m">Draft</h3>
+    <p>None</p>
+    <hr>
+    <h3 class="govuk-heading-m">Final</h3>
+    <p>None</p>
+    <hr>
+    {% endset -%}
+
+    {% set summaryHtml %}
+    <h2 class="govuk-heading-l">To Do</h2>
+    <h3>placeholder</h3>
+    {% endset -%}
+
+    {% set timelineHtml %}
+    <div class="row">
+        <div class="">
+            <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      Add case note
+                    </span>
+                </summary>
+                <div class="govuk-details__text">
+                    <div class="govuk-form-group">
+                        <span class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+                            Case note
+                        </label>
+                        </span>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+                        <button class="govuk-button">Add</button>
+                    </div>
+                </div>
+            </details>
+            <div class="govuk-form-group">
+                <div class="govuk-checkboxes govuk-checkboxes--small" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input note_toggle" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                        <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                            Hide system generated notes
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <ul>
+                    <li class="action_needed user">
+                        <h2>Allocated to decs automated regression user
+                        </h2>
+                        <p>Stage: Data Input</p>
+
+                        <p>23 August 2021 at 15:39 decs automated regression user</p>
+
+                    </li>
+                    <li class="system">
+                        <h2>Stage: Data Input Started</h2>
+                        <p class="time">2 September 2017 at 11.32am</p>
+                        <p>23 August 2021 at 15:39 decs automated regression user</p>
+                    </li>
+                    <li  class="system">
+                        <h2>Document: test.docx Created</h2>
+                        <p>23 August 2021 at 15:39 decs automated regression user </p>
+                    </li>
+                    <li  class="user">
+                        <h2>Example of user generated note</h2>
+                        <p class="time">23 August 2021 at 15:39decs automated regression user</p>
+                    </li>
+                    <li  class="system">
+                        <h2>Case Created</h2>
+                        <p class="time">23 August 2021 at 15:39decs automated regression user</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% endset -%}
+
+    {% set peopleHtml %}
+    <h2 class="govuk-heading-l">To Do</h2>
+    <h3>placeholder</h3>
+    {% endset -%}
+
+    {% set actionsHtml %}
+    <h2 class="govuk-heading-m">Case actions</h2>
+    <h3 class="govuk-heading-s">Extensions</h3>
+    <p>Apply an extension to this case.</p>
+    <a href="#">extend this case</a>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+    <h3 class="govuk-heading-s">Appeals</h3>
+    <p>Record an appeal against this request.</p>
+    <a href="/foi/appeals/index.html">Record an appeal</a>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    {% endset -%}
+
+    {{ govukTabs({
+    items: [
+    {
+    label: "Documents",
+    id: "documents",
+    panel: {
+    html: documentsHtml
+    }
+    },
+    {
+    label: "Summary",
+    id: "summary",
+    panel: {
+    html: summaryHtml
+    }
+    },
+    {
+    label: "Timeline",
+    id: "timeline",
+    panel: {
+    html: timelineHtml
+    }
+    },
+    {
+    label: "People",
+    id: "people",
+    panel: {
+    html: peopleHtml
+    }
+    },
+    {
+    label: "Case actions",
+    id: "actions",
+    panel: {
+    html: actionsHtml
+    }
+    }
+    ]
+    }) }}
+</div>
