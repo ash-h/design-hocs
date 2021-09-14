@@ -9,6 +9,11 @@
     background-color: transparent;
     flex-direction: column;
   }
+
+  &_feature {
+    color:red;
+    background-color: #0B0C0C;
+  }
   &-title {
     text-decoration: none;
     margin-bottom: 0;
