@@ -7,27 +7,27 @@ if (window.console && window.console.info) {
 const systemNotes = document.querySelectorAll('.timeline ul li');
 
 const toggleSwitch = document.getElementsByClassName('note_toggle')[0];
+if (toggleSwitch) {
 
-
-const checkToggle = () => {
-  if (toggleSwitch.checked) {
-    for (let x of systemNotes) {
-      if (x.classList.contains('system')) {
-        x.classList.add("govuk-visually-hidden")
+  const checkToggle = () => {
+    if (toggleSwitch.checked) {
+      for (let x of systemNotes) {
+        if (x.classList.contains('system')) {
+          x.classList.add("govuk-visually-hidden")
+        }
       }
-    }
-  } else {
-    for (let x of systemNotes) {
-      if (x.classList.contains('system')) {
-        x.classList.remove("govuk-visually-hidden")
+    } else {
+      for (let x of systemNotes) {
+        if (x.classList.contains('system')) {
+          x.classList.remove("govuk-visually-hidden")
+        }
       }
     }
   }
+  toggleSwitch.addEventListener('click', () => {
+    checkToggle()
+  })
 }
-toggleSwitch.addEventListener('click',()=> {
-  checkToggle()
-})
-
 $(document).ready(function () {
   window.GOVUKFrontend.initAll()
 
